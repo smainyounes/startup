@@ -1,0 +1,11 @@
+home (actualité )
+profile des ecole (all access)
+inscription (entreprise / ecole / chercheur d'emploi)
+list des emplois 
+list des formations 
+list des ecole de formation
+ajouter emplois 
+ajouter formation
+ajouter cv 
+
+events
