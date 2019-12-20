@@ -1,0 +1,192 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <title>KAIZEN | Inscription</title>
+  </head>
+  <body class="d-flex flex-column bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow"  style="background-color: #e3f2fd;">
+      <div class="container">
+        <a class="navbar-brand" href="#">KAIZEN</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formation.html">Formations</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="emploi.html">Emplois</a>
+            </li>
+            <li class="nav-item mx-md-2 mt-2 mt-md-0">
+              <a href="login.html" class="btn btn-primary" data-toggle="modal" data-target="#login">Login</a>
+            </li>
+            <li class="nav-item mx-md-2 mt-2 mt-md-0">
+              <a href="signup.html" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inscription</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container" id="page-content">
+      <div class="h1 text-center ">Inscription</div>
+      <form class="container p-3" method="POST">
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="">Username</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1" class="">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email" name="email" required>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleFormControlInput1" class="">Nom</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nom" name="nom" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleFormControlInput1" class="">Prenom</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Prenom" name="prenom" required>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="">Password</label>
+                <input type="password" class="form-control" placeholder="Password" name="pass1" required>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label class="">Repeat Password</label>
+                <input type="password" class="form-control" placeholder="Repeat Password" name="pass2" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group text-center">
+            <button class="btn btn-secondary px-4" name="signup">Submit</button>
+          </div>
+        </form>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Vous etes ? </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-md-4 text-center">
+                <a href="">
+                  <img src="img/company.png" width="150px">
+                  <label>Entreprise</label>
+                </a>
+              </div>
+              <div class="col-md-4 text-center">
+                <a href="">
+                  <img src="img/school.jpeg" width="150px">
+                  <label>Ecole</label>
+                </a>
+              </div>
+              <div class="col-md-4 text-center">
+                <a href="">
+                  <img src="img/student.png" width="150px">
+                  <label>Etudiant</label>
+                </a>
+              </div>
+
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Etudiant
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Entreprise
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Ecole
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-4 shadow" id="sticky-footer">
+      <div class="container">
+        <p class="m-0 text-center text-muted">Copyright &copy; Startup Weekend 2019</p>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="vendor/jquery/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -32,10 +32,10 @@
             <li class="nav-item">
               <a class="nav-link" href="emploi.html">Emplois</a>
             </li>
-            <li class="nav-item mx-2 ">
-              <a href="login.html" class="btn btn-primary">Login</a>
+            <li class="nav-item mx-md-2 mt-2 mt-md-0">
+              <a href="login.html" class="btn btn-primary" data-toggle="modal" data-target="#login">Login</a>
             </li>
-            <li class="nav-item mx-2 ">
+            <li class="nav-item mx-md-2 mt-2 mt-md-0">
               <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Inscription</a>
             </li>
           </ul>
@@ -126,20 +126,20 @@
           </div>
           <div class="modal-body">
             <div class="row">
-              <div class="col-4 text-center">
-                <a href="">
+              <div class="col-md-4 text-center">
+                <a href="signup.html">
                   <img src="img/company.png" width="150px">
                   <label>Entreprise</label>
                 </a>
               </div>
-              <div class="col-4 text-center">
-                <a href="">
+              <div class="col-md-4 text-center">
+                <a href="signup.html">
                   <img src="img/school.jpeg" width="150px">
                   <label>Ecole</label>
                 </a>
               </div>
-              <div class="col-4 text-center">
-                <a href="">
+              <div class="col-md-4 text-center">
+                <a href="signup.html">
                   <img src="img/student.png" width="150px">
                   <label>Etudiant</label>
                 </a>
@@ -149,8 +149,55 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">Login </h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Etudiant
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Entreprise
+                  </label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <label class="form-check-label" for="exampleRadios1">
+                    Ecole
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+          
         </div>
       </div>
     </div>
